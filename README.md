@@ -28,7 +28,7 @@ CREATE TABLE orders (
 SELECT customer_name, SUM(total_amount) AS total_spent
 FROM orders
 GROUP BY customer_name
-HAVING SUM(total_amount) > 500;
+HAVING SUM(total_amount) > 500; 
 ```
 PostgreSQL також підтримує функції розподіленої обробки даних через механізми реплікації та шардінгу, що дозволяє масштабувати систему залежно від навантаження.
 
